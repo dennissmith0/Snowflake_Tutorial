@@ -1,0 +1,13 @@
+dbt_proj:
+  outputs:
+    dev:
+      account: NWNAQOW.AAB66573
+      database: demo_dbt
+      password: "{{ env_var('dbt_password') }}" #pRime5kinG7!
+      role: dbt_dev_role
+      schema: public
+      threads: 200
+      type: snowflake
+      user: "{{ env_var('dbt_user') }}" #dennissmith
+      warehouse: dbt_dev_wh
+  target: dev
