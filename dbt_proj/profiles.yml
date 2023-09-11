@@ -3,11 +3,11 @@ dbt_proj:
     dev:
       account: NWNAQOW.AAB66573
       database: demo_dbt
-      password: "{{ env_var('dbt_password') }}" #pRime5kinG7!
+      password: "{{ env_var('dbt_password') }}"
       role: dbt_dev_role
       schema: public
       threads: 200
       type: snowflake
-      user: "{{ env_var('dbt_user') }}" #dennissmith
+      user: "{{ env_var('dbt_user') }}" 
       warehouse: dbt_dev_wh
   target: dev
